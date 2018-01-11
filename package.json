@@ -1,0 +1,27 @@
+{
+  "name": "documenter",
+  "version": "1.0.0",
+  "description": "Documenter is an open-source documentation template built using Bootstrap 4.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/designerdada/documenter.git"
+  },
+  "author": "Akash Bhadange",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/designerdada/documenter/issues"
+  },
+  "homepage": "https://github.com/designerdada/documenter#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.3"
+  }
+}
