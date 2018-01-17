@@ -1,0 +1,28 @@
+// --------------------------------------------
+// All overriding style must be above this line
+// --------------------------------------------
+@import "theme";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body {
+  font-weight: 300;
+}
+// Typography
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5, {
+  margin-bottom: ($spacer * 2);
+  padding-bottom: $spacer;
+  border-bottom: 1px solid $pagination-border-color;
+}
+p {
+  color: $text-color;
+}
+.sidebar {
+  padding-top: ($spacer * 2);
+  border-right: 1px solid $pagination-border-color;
+  position: fixed;
+  left: 0;
+  height: 100%;
+}
+.main-content {
+  padding: ($spacer * 2) ($spacer * 4);
+}

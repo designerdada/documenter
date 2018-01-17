@@ -1,4 +1,14 @@
-
+$font-family-sans-serif: "Montserrat",
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol";
 $enable-caret: true;
 $blue: #0052CC;
 $indigo: #6554C0;
@@ -8,12 +18,14 @@ $orange: #FF5630;
 $gray-800: #343a40;
 $dark: $gray-800;
 $secondary: $dark;
+$text-color: #4a5669;
+$line-height-base : 2;
 $link-hover-decoration: none;
 $input-btn-focus-width: 0rem;
 $input-btn-padding-x-sm: 1.4rem;
 $input-btn-padding-x-lg: 3rem;
-$input-btn-padding-y-lg: 0.6rem;
-$font-size-base: 0.8rem;
+$input-btn-padding-y-lg: 0.4rem;
+$font-size-base: .9rem;
 $h1-font-size: $font-size-base * 3;
 $h2-font-size: $font-size-base * 2.5;
 $h3-font-size: $font-size-base * 2;
@@ -21,13 +33,13 @@ $h4-font-size: $font-size-base * 1.75;
 $h5-font-size: $font-size-base * 1.50;
 $headings-font-weight: 600;
 $list-inline-padding: 10px;
-$input-btn-padding-y: 0.6rem;
+$input-btn-padding-y: 0.4rem;
 $input-btn-padding-x: 2rem;
 $input-btn-padding-y-sm: 0.5rem;
 $form-text-margin-top: 0.4rem;
-$form-check-margin-bottom: 0.6rem;
+$form-check-margin-bottom: 0.4rem;
 $dropdown-item-padding-y: 0.5rem;
-$pagination-padding-y: 0.6rem;
+$pagination-padding-y: 0.4rem;
 $pagination-padding-x: 1rem;
 $pagination-padding-y-sm: 0.4rem;
 $pagination-padding-x-sm: 0.6rem;
