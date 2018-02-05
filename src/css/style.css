@@ -311,7 +311,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
   color: inherit; }
 
@@ -432,7 +432,7 @@ samp {
 
 code {
   font-size: 87.5%;
-  color: #FF7452;
+  color: #56606a;
   word-break: break-word; }
   a > code {
     color: inherit; }
@@ -6002,8 +6002,155 @@ a.text-dark:focus, a.text-dark:hover {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
+#wrapper {
+  margin: 20px auto; }
+
+#codes {
+  border-bottom: 1px solid #5F5F5F;
+  background-color: #343a40;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px; }
+  #codes > li {
+    padding: 8px 0px 8px 8px; }
+    #codes > li > a {
+      position: relative;
+      display: block;
+      padding: 3px 15px;
+      border-radius: 4px;
+      color: #fefdf9;
+      cursor: pointer !important; }
+      #codes > li > a:active, #codes > li > a:focus, #codes > li > a:hover {
+        position: relative;
+        display: block;
+        padding: 3px 15px;
+        border-radius: 4px;
+        color: #fdb839;
+        cursor: default;
+        background-color: #655F56;
+        border: 1px solid #3e3a33;
+        border-bottom-color: transparent; }
+    #codes > li.active > a {
+      position: relative;
+      display: block;
+      padding: 3px 15px;
+      border-radius: 4px;
+      color: #fdb839;
+      cursor: default;
+      background-color: #655F56;
+      border: 1px solid #3e3a33;
+      border-bottom-color: transparent; }
+      #codes > li.active > a:focus, #codes > li.active > a:hover {
+        position: relative;
+        display: block;
+        padding: 3px 15px;
+        border-radius: 4px;
+        color: #fdb839;
+        cursor: default;
+        background-color: #655F56;
+        border: 1px solid #3e3a33;
+        border-bottom-color: transparent; }
+
+/*Override prettify design*/
+pre,
+code {
+  white-space: pre;
+  border: 0 !important;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+code {
+  padding: 0.2rem 0.6rem;
+  background-color: #f9f9fa;
+  border-radius: 0.1rem; }
+
+/* UXCam scheme for google prettify*/
+pre.prettyprint {
+  display: block;
+  background-color: #343a40; }
+
+pre .nocode {
+  background-color: none;
+  color: #000; }
+
+pre .str,
+pre .kwd {
+  color: #fdb839; }
+
+pre .com {
+  color: #B3B3B3; }
+
+pre .typ {
+  color: #fdb839; }
+
+pre .lit {
+  color: #ffc107; }
+
+pre .pun {
+  color: #f8f9fa; }
+
+pre .pln,
+pre .tag {
+  color: #ffa996; }
+
+pre .atn {
+  color: #bdb76b; }
+
+pre .atv,
+pre .dec {
+  color: #fdb839; }
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #AEAEAE; }
+
+/* IE indents via margin-left */
+li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8 {
+  list-style-type: decimal !important; }
+
+li.L1, li.L3, li.L5, li.L7, li.L9 {
+  background-color: transparent !important; }
+
+/* Alternate shading for lines */
+.linenums li {
+  border-left: 1px solid #656565; }
+
+@media print {
+  pre .str,
+  code .str {
+    color: #060; }
+  pre .kwd,
+  code .kwd {
+    color: #006; }
+  pre .com,
+  code .com {
+    color: #600; }
+  pre .typ,
+  code .typ {
+    color: #404; }
+  pre .lit,
+  code .lit {
+    color: #044; }
+  pre .pun,
+  code .pun {
+    color: #440; }
+  pre .pln,
+  code .pln {
+    color: #000; }
+  pre .tag,
+  code .tag {
+    color: #006; }
+  pre .atn,
+  code .atn {
+    color: #404; }
+  pre .atv,
+  code .atv {
+    color: #060; } }
+
 body {
-  font-weight: 300; }
+  font-weight: 300;
+  padding-top: 60px; }
 
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   margin-bottom: 2rem;

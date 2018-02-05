@@ -3,9 +3,11 @@
 // --------------------------------------------
 @import "theme";
 @import "node_modules/bootstrap/scss/bootstrap";
+@import "prettify";
 
 body {
   font-weight: 300;
+  padding-top: 60px;
 }
 // Typography
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5, {

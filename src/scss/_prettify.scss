@@ -1,0 +1,196 @@
+#wrapper {
+	margin: 20px auto;
+}
+
+#codes {
+	border-bottom: 1px solid #5F5F5F;
+	background-color: $dark;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	>li {
+		padding: 8px 0px 8px 8px;
+		>a {
+			position: relative;
+			display: block;
+			padding: 3px 15px;
+			border-radius: 4px;
+			color: #fefdf9;
+			cursor: pointer !important;
+			&:active,
+			&:focus,
+			&:hover {
+				position: relative;
+				display: block;
+				padding: 3px 15px;
+				border-radius: 4px;
+				color: #fdb839;
+				cursor: default;
+				background-color: #655F56;
+				border: 1px solid #3e3a33;
+				border-bottom-color: transparent;
+			}
+		}
+		&.active>a {
+			position: relative;
+			display: block;
+			padding: 3px 15px;
+			border-radius: 4px;
+			color: #fdb839;
+			cursor: default;
+			background-color: #655F56;
+			border: 1px solid #3e3a33;
+			border-bottom-color: transparent;
+			&:focus,
+			&:hover {
+				position: relative;
+				display: block;
+				padding: 3px 15px;
+				border-radius: 4px;
+				color: #fdb839;
+				cursor: default;
+				background-color: #655F56;
+				border: 1px solid #3e3a33;
+				border-bottom-color: transparent;
+			}
+		}
+	}
+}
+
+
+/*Override prettify design*/
+
+pre,
+code {
+	white-space: pre;
+	border: 0 !important;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+code {
+	padding: $code-padding-y $code-padding-x;
+	background-color: lighten($dark, 75%);
+	border-radius: $border-radius-sm;
+}
+
+/* UXCam scheme for google prettify*/
+
+pre {
+	&.prettyprint {
+		display: block;
+		background-color: $dark;
+	}
+	.nocode {
+		background-color: none;
+		color: #000;
+	}
+	.str,
+	.kwd {
+		color: #fdb839;
+	}
+	.com {
+		color: #B3B3B3;
+	}
+	.typ {
+		color: #fdb839;
+	}
+	.lit {
+		color: $yellow;
+	}
+	.pun {
+		color: $light;
+	}
+	.pln,
+	.tag {
+		color: lighten($orange, 20%);
+	}
+	.atn {
+		color: #bdb76b;
+	}
+	.atv,
+	.dec {
+		color: #fdb839;
+	}
+}
+
+
+/* Specify class=linenums on a pre to get line numbering */
+
+ol.linenums {
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #AEAEAE;
+}
+
+
+/* IE indents via margin-left */
+
+li {
+	&.L0,
+	&.L1,
+	&.L2,
+	&.L3,
+	&.L4,
+	&.L5,
+	&.L6,
+	&.L7,
+	&.L8 {
+		list-style-type: decimal !important;
+	}
+	&.L1,
+	&.L3,
+	&.L5,
+	&.L7,
+	&.L9 {
+		background-color: transparent !important;
+	}
+}
+
+
+/* Alternate shading for lines */
+
+.linenums li {
+	border-left: 1px solid #656565;
+}
+
+@media print {
+	pre .str,
+	code .str {
+		color: #060;
+	}
+	pre .kwd,
+	code .kwd {
+		color: #006;
+	}
+	pre .com,
+	code .com {
+		color: #600;
+	}
+	pre .typ,
+	code .typ {
+		color: #404;
+	}
+	pre .lit,
+	code .lit {
+		color: #044;
+	}
+	pre .pun,
+	code .pun {
+		color: #440;
+	}
+	pre .pln,
+	code .pln {
+		color: #000;
+	}
+	pre .tag,
+	code .tag {
+		color: #006;
+	}
+	pre .atn,
+	code .atn {
+		color: #404;
+	}
+	pre .atv,
+	code .atv {
+		color: #060;
+	}
+}

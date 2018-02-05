@@ -17,8 +17,8 @@
   <title>Documenter | Open Source Documentation Template for Developers</title>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body onload="PR.prettyPrint()">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="/assets/documenter-logo.svg" width="150" alt="">
@@ -76,10 +76,42 @@
           </ul> -->
         </div>
         <div class="col-10 ml-auto main-content">
-          <h3>Introduction</h3>
-          <h5>What is feather?</h5>
-          <p>Feather is a collection of simply beautiful open source icons. Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency and readability.</p>
-          <pre>npm install feather-icons</pre>
+          <section class="mb-4">
+            <h3>Introduction</h3>
+            <img src="assets/feather-og.png" class="w-100 mb-4" alt="">
+            <p>Feather is a collection of simply beautiful open source icons. Each icon is designed on a 24x24 grid with an
+              emphasis on simplicity, consistency and readability.</p>
+            <code>npm install feather-icons</code>
+          </section>
+
+          <section class="mb-4">
+            <h3>Quick Start</h3>
+            <p>Start with this CodePen Template to begin prototyping with Feather in the browser.</p>
+            <p>Or copy and paste the following code snippet into a blank
+              <code>html</code> file.</p>
+            <pre class="prettyprint linenums lang-html">
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang=&quot;en&quot;&gt;
+                  &lt;title&gt;&lt;/title&gt;
+                  &lt;script src=&quot;https://unpkg.com/feather-icons/dist/feather.min.js&quot;&gt;&lt;/script&gt;
+                  &lt;body&gt;
+                
+                    &lt;!-- example icon --&gt;
+                    &lt;i data-feather=&quot;circle&quot;&gt;&lt;/i&gt;
+                
+                    &lt;script&gt;
+                      feather.replace()
+                    &lt;/script&gt;
+                  &lt;/body&gt;
+                &lt;/html&gt;</pre>
+          </section>
+
+          <section class="mb-4">
+            <h3>Usage</h3>
+            <p>At its core, Feather is a collection of SVG files. This means that you can use Feather icons in all the same ways you can use SVGs (e.g. <code>img</code>, <code>background-image</code>, <code>inline</code>, <code>object</code>, <code>embed</code>, <code>iframe</code>). Here's a helpful article detailing the many ways SVGs can be used on the web: <a href="https://svgontheweb.com/#implementation"> SVG on the Web – Implementation Options</a></p>
+            <p>The following are additional ways you can use Feather.</p>
+            <h4>Client-side</h4>
+          </section>
         </div>
       </div>
     </div>
@@ -93,17 +125,26 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/jquery-ui-1.9.1.custom.min.js"></script>
   <script src="js/jquery.tocify.min.js"></script>
+  <script src="js/prettify.js"></script>
   <script>
-        //Executes your code when the DOM is ready.  Acts the same as $(document).ready().
-        $(function() {
-          //Calls the tocify method on your HTML div.
-          $("#toc").tocify({ selectors: "h3, h4", scrollTo: 60, highlightOffset: 60, extendPage: true });
-          $(".optionName").popover({ trigger: "hover", container: "body" });
-          $("a[href='#']").click(function(event) {
-              event.preventDefault();
-          });
-        });
-        </script>
+    //Executes your code when the DOM is ready.  Acts the same as $(document).ready().
+    $(function () {
+      //Calls the tocify method on your HTML div.
+      $("#toc").tocify({
+        selectors: "h3, h4",
+        scrollTo: 60,
+        highlightOffset: 60,
+        extendPage: true
+      });
+      $(".optionName").popover({
+        trigger: "hover",
+        container: "body"
+      });
+      $("a[href='#']").click(function (event) {
+        event.preventDefault();
+      });
+    });
+  </script>
 </body>
 
 </html>
